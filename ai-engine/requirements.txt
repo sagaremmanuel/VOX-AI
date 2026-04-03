@@ -1,0 +1,40 @@
+# AI Engine — Python Dependencies
+# Tested on: Python 3.13, macOS Apple Silicon (arm64)
+# Install with:
+#   pip install -r requirements.txt
+#
+# NOTE: Do NOT pin old versions for packages that use Rust (pydantic-core,
+# tokenizers). Let pip resolve the latest wheel that supports your Python version.
+
+# -------------------------------------------------------
+# Core inference — Whisper speech-to-text (no GPU required)
+# -------------------------------------------------------
+faster-whisper                 # Installs: ctranslate2, av, onnxruntime, huggingface-hub
+
+# torch / transformers are NOT needed for the demo.
+# Install only if you add a custom HuggingFace pipeline:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+
+# -------------------------------------------------------
+# API server
+# -------------------------------------------------------
+fastapi
+uvicorn[standard]
+python-multipart                # Required for audio file upload in FastAPI
+
+# -------------------------------------------------------
+# HTTP utilities
+# -------------------------------------------------------
+requests                        # Used by LLMInterface → Ollama
+httpx                           # Async HTTP client / FastAPI test client
+
+# -------------------------------------------------------
+# Utilities
+# -------------------------------------------------------
+pydantic                        # Data validation (FastAPI models use this)
+python-dotenv                   # Load .env configuration files
+
+# -------------------------------------------------------
+# Development / testing
+# -------------------------------------------------------
+pytest

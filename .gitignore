@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+.env
+
+# AI models (large binary files — download separately)
+models/whisper/*.bin
+models/whisper/*.pt
+models/whisper/models--*/
+models/whisper/**/blobs/
+models/whisper/**/snapshots/
+models/whisper/**/refs/
+models/indic_asr/*.onnx
+models/indic_asr/*.bin
+*.gguf
+
+# Android build outputs
+android-app/.gradle/
+android-app/build/
+android-app/app/build/
+android-app/local.properties
+android-app/.idea/
+*.apk
+*.aab
+
+# IDEs
+.idea/
+*.iml
+.DS_Store
+
+# Audio temp files
+*.wav
+*.mp3
+*.m4a
+*.3gp
+temp/
+cache/
+
+# Logs
+*.log
+logs/

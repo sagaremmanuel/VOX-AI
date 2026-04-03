@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="18dp"
+    android:background="@drawable/bg_app_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_glass_panel"
+            android:contentDescription="Back"
+            android:padding="8dp"
+            android:src="@android:drawable/ic_media_previous"
+            android:tint="@color/home_title" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Vox"
+            android:textColor="@color/home_title"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Developer panel"
+        android:textColor="@color/home_subtitle"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tvBackendStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_glass_panel"
+        android:padding="14dp"
+        android:text="Status: Idle"
+        android:textColor="@color/home_title"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Transcript"
+        android:textColor="@color/home_subtitle"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tvBackendTranscript"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_glass_panel"
+        android:padding="14dp"
+        android:text="Waiting for speech..."
+        android:textColor="@color/home_title"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Last spoken response"
+        android:textColor="@color/home_subtitle"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tvBackendTts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_glass_panel"
+        android:padding="14dp"
+        android:text="-"
+        android:textColor="@color/home_title"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Command log"
+        android:textColor="@color/home_subtitle"
+        android:textSize="12sp" />
+
+    <ScrollView
+        android:id="@+id/scrollBackendLog"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_glass_panel"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tvBackendLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:textColor="@color/log_text"
+            android:textSize="12sp" />
+    </ScrollView>
+
+</LinearLayout>

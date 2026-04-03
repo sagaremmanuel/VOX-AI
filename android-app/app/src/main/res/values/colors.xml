@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_top">#030712</color>
+    <color name="bg_bottom">#071A36</color>
+
+    <color name="bg_accent_top">#0B2B62</color>
+    <color name="bg_accent_bottom">#06172E</color>
+
+    <color name="home_title">#F7F8FC</color>
+    <color name="home_subtitle">#9FB2CF</color>
+    <color name="home_primary_button_text">#0C1424</color>
+
+    <color name="surface">#1A2232</color>
+    <color name="surface_border">#334261</color>
+    <color name="log_text">#E7EDF8</color>
+
+    <color name="accent">#F4F7FF</color>
+    <color name="accent_soft">#8AA5FF</color>
+
+    <color name="mode_active">#EEF2FF</color>
+    <color name="mode_inactive">#1A2A46</color>
+    <color name="panel_fill">#142033</color>
+    <color name="panel_border">#2C3B57</color>
+    <color name="chat_input_fill">#111B2B</color>
+</resources>
